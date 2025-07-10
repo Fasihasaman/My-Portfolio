@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightskyblue;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .main {
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+        }
+
+        .image {
+            flex: 1 1 40%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex: 1 1 50%;
+            padding: 20px;
+            border: 5px solid #f0f0f0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="image">
+            <img src="https://images.splitshire.com/full/The-Floating-Nike-Sneaker-with-Purple-Highlights_J4WxJ.png"
+                alt="" width="200" height="200">
+
+        </div>
+        <div class="content">
+            <h2>Nike Running Shoe</h2>
+            <div class="tags">
+                <span class="tag">EU38</span>
+                <span class="tag">BLACK/WHITE</span>
+
+            </div>
+            <p>Crossing hardwood compfort with off- court flair. '80's inspired construction, bold details and
+                nothing'-but-net style.</p>
+            <div class="bottom">
+                <div class="price">
+                    <span>Price</span>
+                    <strong>$69.99</strong>
+                </div>
+                <button>Add to cart</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

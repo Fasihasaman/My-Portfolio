@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Traffic Signal</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+        <nav class="bg-[#4b2e05] py-4 px-20 fixed top-0 w-full z-50">
+                <ul class="flex gap-2 list-none items-center justify-start">
+                        <li><a href="/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Home</a>
+                        </li>
+                        <li><a href="/calculator/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Calculator</a>
+                        </li>
+                        <li><a href="/digitalclock/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">DigitalClock</a>
+                        </li>
+                        <li><a href="/imageslider/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Image
+                                        slider</a></li>
+                        <li><a href="/registerform/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Register
+                                        Form</a></li>
+                        <li><a href="/trafficsignal/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Traffic
+                                        signal</a></li>
+                        <li><a href="/todolist/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">To-Do
+                                        List</a></li>
+                        <li><a href="/timerapp/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Timer
+                                        app</a></li>
+                        <li><a href="/colorinput/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Color-input</a>
+                        </li>
+                        <li><a href="/api/"
+                                        class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Api-Fetching</a>
+                        </li>
+                </ul>
+        </nav>
+
+        <div class="flex justify-center items-center min-h-screen gap-10 bg-gray-800">
+
+                <!-- Traffic Signal 0 -->
+                <div id="signal-0"
+                        class="bg-gray-900 h-[200px] w-[80px] rounded flex flex-col items-center justify-evenly">
+                        <div id="red-0" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="yellow-0" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="green-0" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                </div>
+
+                <!-- Traffic Signal 1 -->
+                <div id="signal-1"
+                        class="bg-gray-900 h-[200px] w-[80px] rounded flex flex-col items-center justify-evenly">
+                        <div id="red-1" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="yellow-1" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="green-1" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                </div>
+
+                <!-- Traffic Signal 2 -->
+                <div id="signal-2"
+                        class="bg-gray-900 h-[200px] w-[80px] rounded flex flex-col items-center justify-evenly">
+                        <div id="red-2" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="yellow-2" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="green-2" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                </div>
+
+                <!-- Traffic Signal 3 -->
+                <div id="signal-3"
+                        class="bg-gray-900 h-[200px] w-[80px] rounded flex flex-col items-center justify-evenly">
+                        <div id="red-3" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="yellow-3" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div id="green-3" class="w-10 h-10 rounded-full bg-gray-700"></div>
+                </div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

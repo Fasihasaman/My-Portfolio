@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated-Car</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .road {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, #808080 0%, #000000 100%);
+            position: relative;
+
+
+
+        }
+
+        .car:hover {
+            animation: main 2s linear infinite;
+            cursor: pointer;
+        }
+
+
+        .car {
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            animation: car 2s linear infinite;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        @keyframes main {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .car:hover {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+
+        @keyframes car {
+            0% {
+                transform: rotate(0deg);
+            }
+
+
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="road">
+
+        <img src="https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/all-models/3-series/gl/2023/navigation.png"
+            class="car" alt="">
+    </div>
+</body>
+
+</html>

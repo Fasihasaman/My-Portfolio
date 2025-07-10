@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/calculator/">Calculator</a></li>
+            <li><a href="/digitalclock/">DigitalClock</a></li>
+            <li><a href="/imageslider/">Image slider</a></li>
+            <li><a href="/registerform/">Register Form</a></li>
+            <li><a href="/trafficsignal/">Traffic signal</a></li>
+            <li><a href="/todolist/">To-Do List</a></li>
+            <li><a href="/timerapp/">Timer app</a></li>
+            <li><a href="/colorinput/">Color-input</a></li>
+            <li><a href="/api/">Api-Fetching</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1>Register Form</h1>
+        <div class="form-container">
+            <form id="register-form">
+                <label for="user-name">User Name</label>
+                <input type="text" id="user-name" placeholder="Enter your name" required>
+
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password">
+                    <i class="fa-solid fa-eye-slash" id="hide"></i>
+                    <i class="fa-solid fa-eye" id="view"></i>
+                </div>
+
+                <label for="confirm-password">Confirm Password</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password">
+                    <i class="fa-solid fa-eye-slash" id="hide2"></i>
+                    <i class="fa-solid fa-eye" id="view2"></i>
+                </div>
+
+                <div class="captcha">
+                    <span id="captcha-text"></span>
+                    <button type="button" id="refresh-captcha"><i class="fa-solid fa-arrows-rotate"></i></button>
+                </div>
+
+                <input type="text" id="captcha" placeholder="Enter Captcha" required>
+                <p id="captcha-match-msg"></p>
+
+                <button id="register" disabled>Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

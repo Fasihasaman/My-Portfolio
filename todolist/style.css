@@ -1,0 +1,211 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', sans-serif;
+ }
+
+ body {
+     background: linear-gradient(to right, #e0eafc, #cfdef3);
+
+     min-height: 100vh;
+
+ }
+
+ .main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     padding: 20px;
+ }
+
+ nav {
+     background-color: #4b2e05;
+     padding: 15px 0px 15px 200px;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 999;
+     align-content: center;
+
+ }
+
+
+
+ nav ul {
+     display: flex;
+     gap: 10px;
+     list-style: none;
+ }
+
+ nav ul li a {
+     color: white;
+
+     font-size: 12px;
+     font-weight: bold;
+     border: 2px solid white;
+     background-color: rgba(191, 105, 6, 0.517);
+     border-radius: 10px;
+     padding: 4px 10px;
+     text-decoration: none;
+     transition: background-color 0.3s ease;
+ }
+
+ nav ul li a:hover {
+     color: black;
+     background-color: antiquewhite;
+     border: 2px solid #b87333;
+ }
+
+ .container {
+     background-color: #fff;
+     width: 100%;
+     max-width: 500px;
+     border-radius: 16px;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+     padding: 20px 25px;
+ }
+
+ h1,
+ h3 {
+     text-align: center;
+     margin-bottom: 15px;
+     color: #2d4059;
+ }
+
+ .input-section {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 20px;
+ }
+
+ #taskinput {
+     flex: 1;
+     padding: 10px;
+     font-size: 1rem;
+     border: 2px solid #00a8cc;
+     border-radius: 8px;
+     transition: 0.3s ease;
+ }
+
+ #taskinput:focus {
+     outline: none;
+     border-color: #007b9c;
+     box-shadow: 0 0 5px rgba(0, 123, 156, 0.3);
+ }
+
+ #addBtn {
+     padding: 10px 16px;
+     background-color: #00a8cc;
+     color: #fff;
+     border: none;
+     border-radius: 8px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: 0.3s ease;
+ }
+
+ #addBtn:hover {
+     background-color: #007b9c;
+ }
+
+ .taskfields {
+     background: #f8fbff;
+     border: 1px solid #c6e2ff;
+     border-radius: 12px;
+     padding: 12px 15px;
+     margin-bottom: 15px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10px;
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+ }
+
+ .task-left {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     flex: 1;
+ }
+
+ .task-left label {
+     font-size: 1rem;
+     word-break: break-word;
+ }
+
+ .edit-input {
+     display: none;
+     padding: 5px 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 1rem;
+     flex: 1;
+ }
+
+ .btn-group {
+     display: flex;
+     gap: 8px;
+ }
+
+ .editBtn,
+ .deleteBtn {
+     padding: 6px 12px;
+     font-size: 0.9rem;
+     font-weight: 500;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+
+ .editBtn {
+     background-color: #ffb830;
+     color: #333;
+ }
+
+ .editBtn:hover {
+     background-color: #e0a800;
+ }
+
+ .deleteBtn {
+     background-color: #ff4d4d;
+     color: #fff;
+ }
+
+ .deleteBtn:hover {
+     background-color: #cc0000;
+ }
+
+ #headline {
+     margin-top: 25px;
+     background-color: #e6f7ff;
+     border: 1px solid #00a8cc;
+     border-radius: 10px;
+     padding: 12px;
+     display: flex;
+     justify-content: space-around;
+     font-weight: bold;
+     color: #007b9c;
+ }
+
+ @media (max-width: 600px) {
+     .input-section {
+         flex-direction: column;
+     }
+
+     #addBtn {
+         width: 100%;
+     }
+
+     .taskfields {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .btn-group {
+         width: 100%;
+         justify-content: flex-end;
+     }
+ }

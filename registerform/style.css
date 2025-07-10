@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #4b2e05;
+    padding: 15px 0px 15px 200px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    align-content: center;
+
+}
+
+
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: rgba(191, 105, 6, 0.517);
+    border-radius: 10px;
+    padding: 4px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid #b87333;
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    padding: 20px;
+
+}
+
+h1 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: whitesmoke;
+    padding: 40px;
+    border: 2px solid #b87333;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #b87333;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #b87333;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #b87333;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e9c87ae8;
+    color: black;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.captcha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#captcha-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b87333;
+}
+
+#refresh-captcha {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#refresh-captcha i {
+    font-size: 20px;
+    color: #b87333;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+
+}
+
+#hide,
+#view,
+#hide2,
+#view2 {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #b87333;
+}

@@ -1,0 +1,127 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+
+
+     background: linear-gradient(135deg, #adebf3, #014a53);
+     height: 100vh;
+
+ }
+
+ .main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     flex-direction: column;
+ }
+
+ nav {
+     background-color: #4b2e05;
+     padding: 15px 0px 15px 200px;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 999;
+     align-content: center;
+
+ }
+
+
+
+ nav ul {
+     display: flex;
+     gap: 10px;
+     list-style: none;
+ }
+
+ nav ul li a {
+     color: white;
+
+     font-size: 12px;
+     font-weight: bold;
+     border: 2px solid white;
+     background-color: rgba(191, 105, 6, 0.517);
+     border-radius: 10px;
+     padding: 4px 10px;
+     text-decoration: none;
+     transition: background-color 0.3s ease;
+ }
+
+ nav ul li a:hover {
+     color: black;
+     background-color: antiquewhite;
+     border: 2px solid #b87333;
+ }
+
+ .container {
+     background-color: #020f15;
+     padding: 40px;
+     border-radius: 20px;
+     box-shadow: 0 10px 40px rgba(235, 198, 198, 0.973);
+     text-align: center;
+     max-width: 350px;
+     width: 90%;
+     color: #dbfcf8;
+ }
+
+ h2 {
+     margin-bottom: 20px;
+     font-size: 36px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+ }
+
+ #timer {
+     font-size: 60px;
+     font-weight: bold;
+     margin-bottom: 25px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+ }
+
+ select {
+     padding: 10px 20px;
+     font-size: 16px;
+     border-radius: 8px;
+     border: 1px solid #ccc;
+     margin-bottom: 20px;
+     background: #e0f2f1;
+
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+     cursor: pointer;
+     outline: none;
+ }
+
+ .buttons {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 10px;
+ }
+
+ button {
+     padding: 10px 20px;
+     width: 100px;
+     font-size: 16px;
+     border: none;
+     border-radius: 8px;
+     background-color: #26a69a;
+     color: white;
+     cursor: pointer;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+
+ button:hover {
+     background-color: #00796b;
+     transform: scale(1.05);
+ }
+
+ button:disabled {
+     background-color: #b2dfdb;
+     cursor: not-allowed;
+     transform: none;
+ }

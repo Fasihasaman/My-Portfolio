@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/calculator/">Calculator</a></li>
+            <li><a href="/digitalclock/">DigitalClock</a></li>
+            <li><a href="/imageslider/">Image slider</a></li>
+            <li><a href="/registerform/">Register Form</a></li>
+            <li><a href="/trafficsignal/">Traffic signal</a></li>
+            <li><a href="/todolist/">To-Do List</a></li>
+            <li><a href="/timerapp/">Timer app</a></li>
+            <li><a href="/colorinput/">Color-input</a></li>
+            <li><a href="/api/">Api-Fetching</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <h2>Timer App</h2>
+            <div id="timer">30</div>
+            <select id="timeSelector">
+                <option value="10">10 seconds</option>
+                <option value="20">20 seconds</option>
+                <option value="30" selected>30 seconds</option>
+                <option value="40">40 seconds</option>
+                <option value="50">50 seconds</option>
+                <option value="60">60 seconds</option>
+            </select>
+            <div class="buttons">
+                <button id="start">START</button>
+                <button id="pause">PAUSE</button>
+                <button id="resume">RESUME</button>
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
