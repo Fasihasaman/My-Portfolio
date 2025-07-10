@@ -171,3 +171,14 @@ button:disabled {
     cursor: pointer;
     color: #b87333;
 }
+
+@media (max-width:760px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        margin-top: 90%;
+    }
+}
