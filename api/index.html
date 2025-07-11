@@ -9,8 +9,9 @@
 </head>
 
 <body class="bg-gray-100 ">
-        <nav class="bg-[#4b2e05] py-4 px-20 fixed top-0 w-full z-50">
-                <ul class="flex gap-2 list-none items-center justify-start">
+        <nav class="bg-[#4b2e05] py-4 px-10 sm:px-6 md:px-10 lg:px-20 fixed top-0 w-full z-50">
+                <ul
+                        class="flex flex-wrap sm:flex-col md:flex-row gap-2 list-none items-center justify-start sm:items-start sm:gap-3">
                         <li><a href="/"
                                         class="text-white text-xs font-bold border-2 border-white bg-[rgba(191,105,6,0.517)] rounded-lg px-3 py-1 hover:text-black hover:bg-[antiquewhite] hover:border-[#b87333] transition">Home</a>
                         </li>
@@ -45,10 +46,13 @@
         </nav>
 
 
-        <div class="text-center mt-20 mb-6">
-                <button id="fetch" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">Fetch
-                        Products</button>
+        <div class="mt-[280px] sm:mt-[400px] md:mt-40 mb-6 flex justify-center">
+                <button id="fetch"
+                        class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition sm:px-6 sm:py-2.5 md:px-8 md:py-3">
+                        Fetch Products
+                </button>
         </div>
+
 
         <div id="output" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 

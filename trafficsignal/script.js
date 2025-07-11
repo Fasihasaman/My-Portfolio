@@ -26,16 +26,16 @@ function setSignal(index, color) {
 }
 
 function changeSignal() {
-    setSignal(current, "yellow"); // Yellow first
+    setSignal(current, "yellow");
 
     setTimeout(function () {
-        current = (current + 1) % 4; // Move to next signal
-        setSignal(current, "red");   // Set new red and others green
-    }, 1000); // Yellow light lasts 1 second
+        current = (current + 1) % 4;
+        setSignal(current, "red");
+    }, 1000);
 }
 
-// Initial state
+
 setSignal(0, "red");
 
-// Change signal every 3 seconds
+
 setInterval(changeSignal, 3000);

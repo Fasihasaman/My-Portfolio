@@ -1,15 +1,15 @@
-const fetchBtn = document.getElementById("fetch");
-const output = document.getElementById("output");
+const fetchBtn = document.querySelector("#fetch");
+const output = document.querySelector("#output");
 
 fetchBtn.addEventListener("click", async () => {
-    try {
-        const res = await fetch("https://fakestoreapi.com/products");
-        const data = await res.json();
+  try {
+    const res = await fetch("https://fakestoreapi.com/products");
+    const data = await res.json();
 
-        output.innerHTML = ""; // clear previous cards
+    output.innerHTML = ""; // clear previous cards
 
-        data.forEach(product => {
-            const card = `
+    data.forEach(product => {
+      const card = `
         <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
           <img src="${product.image}" alt="${product.title}" class="h-48 w-full object-contain p-4" />
           <div class="px-4 pb-4">
@@ -21,10 +21,10 @@ fetchBtn.addEventListener("click", async () => {
           </div>
         </div>
       `;
-            output.innerHTML += card;
-        });
+      output.innerHTML += card;
+    });
 
-    } catch (err) {
-        output.innerHTML = `<p class="text-red-500 font-semibold">Error: ${err.message}</p>`;
-    }
+  } catch (err) {
+    output.innerHTML = `<p class="text-red-500 font-semibold">Error: ${err.message}</p>`;
+  }
 });
